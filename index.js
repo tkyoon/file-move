@@ -18,16 +18,3 @@ files.forEach((file) => {
   fs.renameSync(`${rootFolder}/${file}`, `${currentFolderPath}/${file}`);
   cnt++;
 });
-
-// fs.readdirSync(rootFolder).forEach((file) => {
-//   if (makeFolderIdx === 0 || cnt % 50 === 0) {
-//     makeFolderIdx++;
-//     currentFolderPath = `${rootFolder}/${makeFolderIdx}`;
-//     fs.mkdirSync(currentFolderPath);
-//   }
-
-//   fs.renameSync(`${rootFolder}/${file}`, `${currentFolderPath}/${file}`);
-
-//   cnt++;
-//   //console.log(file);
-// });
