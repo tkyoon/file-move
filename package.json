@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/tkyoon/file-move/issues"
   },
-  "homepage": "https://github.com/tkyoon/file-move#readme"
+  "homepage": "https://github.com/tkyoon/file-move#readme",
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
 }
