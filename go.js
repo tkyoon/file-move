@@ -6,7 +6,7 @@ const divideByDate = async (photoFolder) => {
     let makeDirArr = new Array();
     /** 파일 일자별로 폴더 나누기 [TK Yoon(y-friend@daum.net) 2021-10-09 21:31:53] */
     fs.readdirSync(photoFolder).forEach((file) => {
-        if(path.extname(file) === ".mp4") {
+        if(path.extname(file) === ".mp4" || path.extname(file) === ".wmv") {
             if (!fs.existsSync(`${photoFolder}/video`)) {
                 fs.mkdirSync(`${photoFolder}/video`);
             }
@@ -81,14 +81,14 @@ const divideByCount15 = async (rootFolder) => {
 }
 
 const go = async() => {
-    const rootFolder = "C:/Users/user/Desktop/DCIM/Camera";
+    const rootFolder = "D:/네이버클라우드백업/내 그림/사진/아레테/해인이100일";
     const makeFolders = await divideByDate(rootFolder);
     for(folder of makeFolders) {
         await divideByCount50(folder);
     }
     
     //비디오폴더 15개씩 나누기 - 유튜브 기준
-    divideByCount15(`${rootFolder}rootFolder`);
+    divideByCount15(`${rootFolder}/video`);
 }
 
 go();
