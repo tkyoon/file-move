@@ -81,7 +81,7 @@ const divideByCount15 = async (rootFolder) => {
 }
 
 const go = async() => {
-    const rootFolder = "D:/네이버클라우드백업/내 그림/사진/아레테/해인이100일";
+    const rootFolder = "C:/Users/TK Yoon/Desktop/Camera";
     const makeFolders = await divideByDate(rootFolder);
     for(folder of makeFolders) {
         await divideByCount50(folder);
