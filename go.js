@@ -85,7 +85,7 @@ const divideByCount15 = async (rootFolder) => {
 }
 
 const go = async() => {
-    const rootFolder = "C:/Users/y-fri/OneDrive/바탕 화면/Camera";
+    const rootFolder = "C:/Users/윤태경/OneDrive/바탕 화면/Camera";
     const makeFolders = await divideByDate(rootFolder);
     for(folder of makeFolders) {
         await divideByCount50(folder);

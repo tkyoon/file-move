@@ -1,4 +1,4 @@
-const rootFolder = "C:/Users/윤태경/Desktop/camera/202109";
+const rootFolder = "C:/Users/윤태경/OneDrive/바탕 화면/Camera";
 const fs = require("fs");
 
 let cnt = 0;
